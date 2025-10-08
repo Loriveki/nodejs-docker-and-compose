@@ -5,20 +5,17 @@ services:
     image: postgres:15
     container_name: kupipodariday-db
     restart: unless-stopped
-    env_file: 
-     - ./backend/.env
+    env_file: ./backend/.env
     volumes:
       - db-data:/var/lib/postgresql/data
     networks:
       - kpd-network
 
   backend:
-    build:
-      context: ./backend
+    build: ./backend
     container_name: kupipodariday-backend
     restart: unless-stopped
-    env_file:
-      - ./backend/.env
+    env_file: ./backend/.env
     ports:
       - "4000:3000" 
     depends_on:
@@ -27,16 +24,15 @@ services:
       - kpd-network
 
   frontend:
-    build:
-      context: ./frontend
+    build: ./frontend
     container_name: kupipodariday-frontend
     restart: unless-stopped
     ports:
-      - "8081:80"  
+      - "8081:80"
     networks:
       - kpd-network
     depends_on:
-    - backend  
+      - backend
 
 volumes:
   db-data:

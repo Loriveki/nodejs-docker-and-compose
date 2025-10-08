@@ -7,7 +7,7 @@ RUN npm ci
 
 COPY . .
 
-ARG REACT_APP_API_URL=http://api.my-mesto.space.nomorepartiessbs.ru
+ARG REACT_APP_API_URL=https://api.my-mesto.space.nomorepartiessbs.ru
 ENV REACT_APP_API_URL=$REACT_APP_API_URL
 
 RUN npm run build

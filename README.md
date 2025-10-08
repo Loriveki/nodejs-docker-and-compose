@@ -4,7 +4,7 @@
 
 IP сервера: 158.160.185.102
 
-Frontend: https://my-mesto.space.nomorepartiessbs.ru
+Frontend: https://my-mesto.space.nomorepartiessbs.ru  
 Backend: https://api.my-mesto.space.nomorepartiessbs.ru
 
 ## 🚀 О проекте
@@ -21,7 +21,7 @@ Backend: https://api.my-mesto.space.nomorepartiessbs.ru
 ## 🛠 Используемые технологии  
 🔹 Node.js  
 🔹 TypeScript  
-🔹 PostgreSQL
+🔹 PostgreSQL  
 🔹 pm2-runtime  
 🔹 React  
 🔹 Webpack  
